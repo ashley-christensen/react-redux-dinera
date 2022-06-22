@@ -1,7 +1,9 @@
 import { Button, Label, Col, FormGroup } from 'reactstrap';
-import { Formik, Field, Form } from 'formik';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { validateContactForm } from '../utils/validateContactForm';
 
 const ContactForm = () => {
+
  const handleSubmit = (values, { resetForm }) => {
   console.log('form values:', values);
   console.log('in JSON format:', JSON.stringify(values));
@@ -20,6 +22,7 @@ const ContactForm = () => {
     feedback: '',
    }}
    onSubmit={handleSubmit}
+   validate={validateContactForm}
   >
    <Form>
     <FormGroup row>
@@ -32,6 +35,9 @@ const ContactForm = () => {
        placeholder='First Name'
        className='form-control'
       />
+      <ErrorMessage name='firstName'>
+       {(msg) => <p className='text-danger'>{msg}</p>}
+      </ErrorMessage>
      </Col>
     </FormGroup>
     <FormGroup row>
@@ -44,6 +50,9 @@ const ContactForm = () => {
        placeholder='Last Name'
        className='form-control'
       />
+      <ErrorMessage name='lastName'>
+       {(msg) => <p className='text-danger'>{msg}</p>}
+      </ErrorMessage>
      </Col>
     </FormGroup>
     <FormGroup row>
@@ -56,6 +65,9 @@ const ContactForm = () => {
        placeholder='Phone'
        className='form-control'
       />
+      <ErrorMessage name='phoneNum'>
+       {(msg) => <p className='text-danger'>{msg}</p>}
+      </ErrorMessage>
      </Col>
     </FormGroup>
     <FormGroup row>
@@ -69,6 +81,9 @@ const ContactForm = () => {
        type='email'
        className='form-control'
       />
+      <ErrorMessage name='email'>
+       {(msg) => <p className='text-danger'>{msg}</p>}
+      </ErrorMessage>
      </Col>
     </FormGroup>
     <FormGroup row>
