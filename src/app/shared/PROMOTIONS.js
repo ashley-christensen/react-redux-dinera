@@ -1,41 +1,41 @@
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
+import romanticImg from '../assets/img/romance.jpg';
 //Photo by Jonny Caspari on Unsplash
-import weedsImg from '../assets/img/weeds.jpg';
+import picnicImg from '../assets/img/picnic.jpg';
 // Photo by LoboStudio Hamburg on Unsplash
-import bootsImg from '../assets/img/boots.jpg';
+import vegetarianImg from '../assets/img/vegetarian.jpg';
 // Photo by Jonathan Gallegos on Unsplash
-import asyncImg from '../assets/img/mount-promise.jpg';
+import partyImg from '../assets/img/party.jpg';
 
 export const PROMOTIONS = [
     {
         id: 0,
-        name: 'Mountain Adventure',
-        image: breadCrumbImg,
+        name: 'Romance for Two',
+        image: romanticImg,
         featured: true,
         description:
-            'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'
+            'Enjoy a Romantic evening with stunning views, and rooftop experience.'
     },
     {
         id: 1,
-        name: 'Into The Weeds',
-        image: weedsImg,
+        name: 'Rustic Picnic',
+        image: picnicImg,
         featured: false,
         description:
-            '5 days deep in the Redux National Monument, far from the beaten path, with only a reducer in your backpack. Guide provided.'
+            'This oceanside picnic combines adventure with relaxation'
     },
     {
         id: 2,
-        name: 'Bootstrap Teardown',
-        image: bootsImg,
+        name: 'Vegetarian Deluxe',
+        image: vegetarianImg,
         featured: false,
-        description: `In this weekend workshop, we'll rebuild your bootstraps from scratch, so you're ready for next-level excursions.`
+        description: `A 5 course vegetarian meal so good you will forget about meat`
     },
     {
         id: 3,
-        name: 'Asynchronous Rendezvous',
-        image: asyncImg,
+        name: 'Party for many',
+        image: partyImg,
         featured: false,
         description:
-            'Meet up with your guide at the top of Promise Mountain. Or, try to. Good luck!'
+            'Celebrate with friends and family with our deluxe party room and selections'
     }
 ];

@@ -8,16 +8,16 @@ import {
  NavItem,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import NucampLogo from '../app/assets/img/logo.png';
+import dLogo from '../app/assets/img/logo.png';
 
 const Header = () => {
  const [menuOpen, setMenuOpen] = useState(false);
 
  return (
-  <Navbar dark color='primary' sticky='top' expand='md'>
+  <Navbar dark color="dark" sticky='top' expand='md'>
    <NavbarBrand className='ms-5' href='/'>
-    <img src={NucampLogo} alt='nucamp logo' className='float-start' />
-    <h1 className='mt-1'>NuCamp</h1>
+    <img src={dLogo} alt='dinera logo' className='float-start' />
+    <h1 className='mt-2'>Dinera</h1>
    </NavbarBrand>
    <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
    <Collapse isOpen={menuOpen} navbar>

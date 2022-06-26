@@ -3,13 +3,13 @@ import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactst
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateCommentForm } from '../../utils/validateCommentForm';
 
-const CommentForm = ({ campsiteId }) => {
+const CommentForm = ({ dineId }) => {
  const [modalOpen, setModalOpen] = useState(false);
 
 
  const handleSubmit = (values) => {
   const comment = {
-   campsiteId: parseInt(campsiteId),
+   campsiteId: parseInt(dineId),
    rating: values.rating,
    author: values.author,
    text: values.commentText

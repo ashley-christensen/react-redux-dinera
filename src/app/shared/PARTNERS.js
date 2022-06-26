@@ -1,39 +1,39 @@
-import bootStrapLogo from '../assets/img/bootstrap-logo.png';
-import gitLogo from '../assets/img/git-logo.png';
-import mongoLogo from '../assets/img/mongo-logo.png';
-import nodeLogo from '../assets/img/node-logo.png';
+import flesImg from '../assets/img/fles.jpg';
+import clubImg from '../assets/img/club.jpg';
+import barberImg from '../assets/img/barber.jpg';
+import cafeImg from '../assets/img/cafe.jpg';
 
 export const PARTNERS = [
     {
         id: 0,
-        name: 'Bootstrap Outfitters',
-        image: bootStrapLogo,
+        name: 'Svelte Car Service',
+        image: flesImg,
         featured: false,
         description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+            "Svelte car service provides transport to and from anywhere in the city, with special rates for Dinera patrons."
     },
     {
         id: 1,
-        name: 'Git Out Expeditions',
-        image: gitLogo,
+        name: 'Club Channing',
+        image: clubImg,
         featured: false,
         description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
+            'Join us afterhours so the night never ends!'
     },
     {
         id: 2,
-        name: 'Mongo Fly Shop',
-        image: mongoLogo,
+        name: 'SF Barber',
+        image: barberImg,
         featured: false,
         description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
+            'Need a new cut for your big night? We are next door and have you covered.'
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
-        image: nodeLogo,
+        name: 'Let\'s Cafe',
+        image: cafeImg,
         featured: true,
         description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
+            'From Taiwanese to French, our pastries are delivered to Dinera fresh daily'
     }
 ];

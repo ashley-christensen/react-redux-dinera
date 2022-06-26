@@ -2,8 +2,8 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 
-const CampsiteCard = ({ campsite }) => {
- const { id, image, name } = campsite;
+const DineCard = ({ dine }) => {
+ const { id, image, name } = dine;
 
  return (
   <Link to={`${id}`}>
@@ -20,4 +20,4 @@ const CampsiteCard = ({ campsite }) => {
   </Link>
  );
 };
-export default CampsiteCard;
+export default DineCard;
