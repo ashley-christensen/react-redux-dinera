@@ -6,3 +6,9 @@ cd react-redux-dinera
 npm install
 
 npm start
+
+Main technologies and libraries
+React
+Redux
+Redux Forms
+Reactstrap
