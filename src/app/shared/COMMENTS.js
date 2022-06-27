@@ -67,7 +67,7 @@ export const COMMENTS = [
         id: 8,
         dineId: 1,
         rating: 4,
-        text: "Love the menu but they were out of fresh anything with grapefruit.",
+        text: "Love the menu but they were out of menu items with grapefruit.",
         author: 'Amy Keophilavong',
         date: '2018-07-23T19:44Z'
     },
@@ -156,7 +156,7 @@ export const COMMENTS = [
         dineId: 3,
         rating: 5,
         text: "The photos don't do justice to the wonder of these desserts.",
-        author: 'Minae Lee',
+        author: 'Ashley Smith',
         date: '2019-02-18T18:12Z'
     }
 ];
