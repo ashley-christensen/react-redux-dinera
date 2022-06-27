@@ -39,7 +39,7 @@ const AboutPage = () => {
                 <footer className='blockquote-footer'>
                   Danielle Tangrine,{' '}
                   <cite title='Source Title'>
-                    "The Heart of Taste" - The Chief Wanderer,
+                    "The Heart of Taste" - Chief Wanderer,
                     1977
                   </cite></footer>
               </blockquote>

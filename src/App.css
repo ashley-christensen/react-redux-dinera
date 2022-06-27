@@ -36,6 +36,16 @@ h2 {
 	margin-top: 2rem;
 }
 
+.footer-link {
+	color: rgba(255, 255, 255, 0.55);
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+
 .navbar-brand {
 	max-width: 4rem;
 	margin-right: 2rem;

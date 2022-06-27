@@ -7,24 +7,24 @@ const Footer = () => {
    <Container>
     <Row>
      <Col xs={{ size: 4, offset: 1 }} sm='2'>
-      <h5>Links</h5>
+      <h5 className='my-3'>Links</h5>
       <ul className='list-unstyled'>
        <li>
-        <Link to='/'>Home</Link>
+        <Link to='/' className='footer-link'>Home</Link>
        </li>
        <li>
-        <Link to='/directory'>Directory</Link>
+        <Link to='/directory' className='footer-link'>Directory</Link>
        </li>
        <li>
-        <Link to='/about'>About</Link>
+        <Link to='/about' className='footer-link'>About</Link>
        </li>
        <li>
-        <Link to='/contact'>Contact</Link>
+        <Link to='/contact' className='footer-link'>Contact</Link>
        </li>
       </ul>
      </Col>
      <Col xs='6' sm='3' className='text-center'>
-      <h5>Social</h5>
+      <h5 className='my-3'>Social</h5>
       <a
        className='btn btn-social-icon btn-instagram'
        href='http://instagram.com/'
@@ -50,10 +50,10 @@ const Footer = () => {
        <i className='fa fa-youtube' />
       </a>
      </Col>
-     <Col sm='4' className='text-center'>
+     <Col sm='4' className='text-center pt-3'>
       <a
        role='button'
-       className='btn btn-link'
+       className='footer-link mt-5'
        href='tel:+16505551234'
       >
        <i className='fa fa-phone' /> 1-650-555-1234
@@ -61,7 +61,7 @@ const Footer = () => {
       <br />
       <a
        role='button'
-       className='btn btn-link'
+       className='footer-link'
        href='mailto:notreal@notreal.co'
       >
        <i className='fa fa-envelope-o' /> info@dinera.co
