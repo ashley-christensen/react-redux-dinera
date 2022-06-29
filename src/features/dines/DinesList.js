@@ -1,10 +1,10 @@
-
+import { useSelector } from 'react-redux'
 import { Col, Row } from 'reactstrap';
 import DineCard from './DineCard';
-import { selectAllDines } from './dineSlice';
+import { selectAllDines } from './dinesSlice';
 
 const DinesList = () => {
- const dines = selectAllDines();
+ const dines = useSelector(selectAllDines);
  return (
   <Row className='ms-auto'>
    {dines.map((dine) => {

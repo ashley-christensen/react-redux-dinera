@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 // import logger from 'redux-logger';
-// import { dinesReducer } from '../features/dines/dinesSlice';
+import { dinesReducer } from '../features/dines/dinesSlice';
 // import { commentsReducer } from '../features/comments/commentsSlice'
 // import { partnersReducer } from '../features/comments/partnersSlice'
 // import { promotionsReducer } from '../features/comments/promotionsSlice'
@@ -9,7 +9,7 @@ import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
   reducer: {
-    // dines: dinesReducercomments,
+    dines: dinesReducer,
     // comments: commentsReducer,
     // partners: partnersReducer,
     // promotions: promotionsReducer,
