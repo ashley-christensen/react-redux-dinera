@@ -28,8 +28,8 @@ const Header = () => {
       </NavLink>
      </NavItem>
      <NavItem>
-      <NavLink className='nav-link' to='/directory'>
-       <i className='fa fa-list fa-lg' /> Directory
+      <NavLink className='nav-link' to='/dining'>
+       <i className='fa fa-list fa-lg' /> Dining
       </NavLink>
      </NavItem>
      <NavItem>

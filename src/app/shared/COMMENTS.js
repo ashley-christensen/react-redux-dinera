@@ -11,7 +11,7 @@ export const COMMENTS = [
         id: 1,
         dineId: 0,
         rating: 3,
-        text: 'The waffles are spectacular, so my wife at all mine.',
+        text: 'The waffles are spectacular... so my wife ate all mine.',
         author: 'Zandra Katherine',
         date: '2017-06-17T03:33Z'
     },
@@ -19,7 +19,7 @@ export const COMMENTS = [
         id: 2,
         dineId: 0,
         rating: 4,
-        text: 'The eggs are nice, but they are absolutely best poached.',
+        text: 'The egg dishes are all great, but they are absolutely best poached.',
         author: 'Amy Keophilavong',
         date: '2019-02-18T18:12Z'
     },

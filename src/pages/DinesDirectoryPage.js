@@ -5,7 +5,7 @@ import SubHeader from '../components/SubHeader';
 const DinesDirectoryPage = () => {
  return (
   <Container>
-   <SubHeader current='Directory' />
+   <SubHeader current='Dining' />
    <DinesList />
   </Container>
  );

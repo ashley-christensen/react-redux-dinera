@@ -34,6 +34,6 @@ export const PARTNERS = [
         image: cafeImg,
         featured: true,
         description:
-            'From Taiwanese to French, our pastries are delivered to Dinera fresh daily'
+            'From Taiwanese to French, our pastries are delivered fresh to Dinera, daily.'
     }
 ];
