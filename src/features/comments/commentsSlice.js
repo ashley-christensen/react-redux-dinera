@@ -14,7 +14,6 @@ const commentsSlice = createSlice({
    console.log('addcomment state.commentsArray:', state.commentsArray);
    const newComment = {
     id: state.commentsArray.length + 1,
-    //rating, author, commentText
     ...action.payload
    };
    state.commentsArray.push(newComment);

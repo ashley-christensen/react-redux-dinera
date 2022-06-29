@@ -12,7 +12,7 @@ const CommentForm = ({ dineId }) => {
 
  const handleSubmit = (values) => {
   const comment = {
-   campsiteId: parseInt(dineId),
+   dineId: parseInt(dineId),
    rating: values.rating,
    author: values.author,
    text: values.commentText,
