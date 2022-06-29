@@ -131,7 +131,7 @@ export const COMMENTS = [
         id: 16,
         dineId: 3,
         rating: 5,
-        text: 'Excellent desserts to cleanse teh palette after a nice meal.',
+        text: 'Excellent desserts to cleanse the palette after a nice meal.',
         author: 'Amy Keophilavong',
         date: '2018-07-23T19:44Z'
     },
