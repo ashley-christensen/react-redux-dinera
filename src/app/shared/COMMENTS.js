@@ -115,7 +115,7 @@ export const COMMENTS = [
         id: 14,
         dineId: 2,
         rating: 5,
-        text: 'Perfect scenery for a smoked kipper breakfast with friends!',
+        text: 'Perfect scenery and nice jazz music to sit back!',
         author: 'Dave Lister',
         date: '2019-08-04T20:11Z'
     },
