@@ -1,10 +1,11 @@
+import { useSelector } from 'react-redux';
 import { Col } from 'reactstrap';
 import Comment from './Comment';
 import { selectCommentsByDineId } from './commentsSlice';
 import CommentForm from './CommentForm';
 
 const CommentsList = ({ dineId }) => {
- const comments = selectCommentsByDineId(dineId);
+ const comments = useSelector(selectCommentsByDineId(dineId));
 
  if (comments && comments.length > 0) {
   return (
