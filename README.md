@@ -12,3 +12,6 @@ React
 Redux
 Redux Forms
 Reactstrap
+
+
+CI/CD - https://dinera-react.netlify.app/
