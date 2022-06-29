@@ -1,5 +1,4 @@
 import { Col, Row } from 'reactstrap';
-// import DisplayCard from './DisplayCard';
 import AnimatedDisplayCard from './AnimatedDisplayCard';
 import { selectFeaturedDine } from '../dines/dineSlice';
 import { selectFeaturedPromotion } from '../promotions/promotionsSlice';

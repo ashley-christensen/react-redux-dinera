@@ -1,6 +1,6 @@
 import brunchImg from '../assets/img/brunches.jpg';
 import dinnerImg from '../assets/img/dinner.jpg';
-import drinksImg from '../assets/img/drinks.jpg';
+import cocktailsImg from '../assets/img/cocktails.jpg';
 import dessertsImg from '../assets/img/desserts.jpg';
 
 export const DINES = [
@@ -25,7 +25,7 @@ export const DINES = [
     {
         id: 2,
         name: 'Happy Hour Escape',
-        image: drinksImg,
+        image: cocktailsImg,
         cost: '$',
         featured: false,
         description:
