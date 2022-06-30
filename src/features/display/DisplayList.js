@@ -7,9 +7,9 @@ import { selectFeaturedPartner } from '../partners/partnersSlice';
 
 const DisplayList = () => {
  const items = useSelector((state) => [
-  selectFeaturedDine(state), 
-  selectFeaturedPromotion(state), 
-  selectFeaturedPartner(state)
+  selectFeaturedDine(state),
+  selectFeaturedPartner(state),
+  selectFeaturedPromotion(state),
  ]);
 
  return (
