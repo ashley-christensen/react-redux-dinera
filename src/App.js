@@ -9,6 +9,7 @@ import DinesDirectoryPage from './pages/DinesDirectoryPage';
 import DineDetailPage from './pages/DineDetailPage';
 import AboutPage from './pages/AboutPage';
 import { fetchDines } from './features/dines/dinesSlice';
+import { fetchPartners } from './features/partners/partnersSlice';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchDines())
+    dispatch(fetchPartners())
   }, [dispatch])
 
   return (
