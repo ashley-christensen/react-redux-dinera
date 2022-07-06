@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
@@ -6,9 +8,16 @@ import Footer from './components/Footer';
 import DinesDirectoryPage from './pages/DinesDirectoryPage';
 import DineDetailPage from './pages/DineDetailPage';
 import AboutPage from './pages/AboutPage';
+import { fetchDines } from './features/dines/dinesSlice';
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchDines())
+  }, [dispatch])
+
   return (
     <div className='App'>
       <Header />
