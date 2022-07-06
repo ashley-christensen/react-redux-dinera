@@ -54,5 +54,11 @@ export const selectDineById = (id) => (state) => {
 };
 
 export const selectFeaturedDine = (state) => {
-  return state.dines.dinesArray.find((dine) => dine.featured);
+  return {
+    featuredItem: state.dines.dinesArray.find(
+      (dine) => dine.featured
+    ),
+    isLoading: state.dines.isLoading,
+    errMsg: state.dines.errMsg
+  };
 };
