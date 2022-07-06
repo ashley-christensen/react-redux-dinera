@@ -10,15 +10,17 @@ import DineDetailPage from './pages/DineDetailPage';
 import AboutPage from './pages/AboutPage';
 import { fetchDines } from './features/dines/dinesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
+import { fetchPromotions } from './features/promotions/promotionsSlice';
 import './App.css';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchDines())
-    dispatch(fetchPartners())
-  }, [dispatch])
+    dispatch(fetchDines());
+    dispatch(fetchPartners());
+    dispatch(fetchPromotions());
+  }, [dispatch]);
 
   return (
     <div className='App'>
