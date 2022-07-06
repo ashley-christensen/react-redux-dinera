@@ -5,18 +5,34 @@ import { selectDineById } from '../features/dines/dinesSlice';
 import DineDetail from '../features/dines/DineDetail';
 import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
+import Error from '../components/Error';
+import Loading from '../components/Loading';
 
 const DineDetailPage = () => {
  const { dineId } = useParams();
  const dine = useSelector(selectDineById(dineId));
 
- return (
-  <Container>
-   <SubHeader current={dine.name} detail={true} />
-   <Row>
+ const isLoading = useSelector((state) => state.dines.isLoading);
+ const errMsg = useSelector((state) => state.dines.errMsg);
+ let content = null;
+
+ if (isLoading) {
+  content = <Loading />;
+ } else if (errMsg) {
+  content = <Error errMsg={errMsg} />;
+ } else {
+  content = (
+   <>
     <DineDetail dine={dine} />
     <CommentsList dineId={dineId} />
-   </Row>
+   </>
+  );
+ }
+
+ return (
+  <Container>
+   {dine && <SubHeader current={dine.name} detail={true} />}
+   <Row>{content}</Row>
   </Container>
  );
 };

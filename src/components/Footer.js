@@ -7,7 +7,7 @@ const Footer = () => {
    <Container>
     <Row>
      <Col xs={{ size: 4, offset: 1 }} sm='2'>
-      <h5 className='my-3'>Links</h5>
+      <h5 className='my-3 text-white'>Links</h5>
       <ul className='list-unstyled'>
        <li>
         <Link to='/' className='footer-link'>Home</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
       </ul>
      </Col>
      <Col xs='6' sm='3' className='text-center'>
-      <h5 className='my-3'>Social</h5>
+      <h5 className='my-3 text-white'>Social</h5>
       <a
        className='btn btn-social-icon btn-instagram'
        href='http://instagram.com/'

@@ -9,7 +9,7 @@ export const fetchDines = createAsyncThunk(
     //sends req for campsite data to local json server instance
     const response = await fetch(baseUrl + 'dines');
     if (!response.ok) {
-      return Promise.reject('Unable to fetch, status:' + response.status);
+      return Promise.reject('Unable to fetch, status: ' + response.status);
     }
     const data = await response.json();
     return data;
