@@ -17,7 +17,6 @@ const PartnersList = () => {
  ) : (
   <Col className='mt-4'>
    <Row>
-
     {partners.map((partner) => {
      return (
       <div className='d-flex mb-5' key={partner.id}>

@@ -3,10 +3,26 @@ import { Col } from 'reactstrap';
 import Comment from './Comment';
 import { selectCommentsByDineId } from './commentsSlice';
 import CommentForm from './CommentForm';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 
 
 const CommentsList = ({ dineId }) => {
  const comments = useSelector(selectCommentsByDineId(dineId));
+ const isLoading = useSelector((state) => state.comments.isLoading);
+ const errMsg = useSelector((state) => state.comments.errMsg);
+
+ if (isLoading) {
+  return (
+   <Loading />
+  );
+ }
+
+ if (errMsg) {
+  return (
+   <Error errMsg={errMsg} />
+  );
+ }
 
  if (comments && comments.length > 0) {
   return (

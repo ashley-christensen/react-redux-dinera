@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateCommentForm } from '../../utils/validateCommentForm';
-import { addComment } from './commentsSlice';
+import { postComment } from './commentsSlice';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 
 const CommentForm = ({ dineId }) => {
  const [modalOpen, setModalOpen] = useState(false);
+ const isLoading = useSelector((state) => state.comments.isLoading);
+ const errMsg = useSelector((state) => state.comments.errMsg);
 
  const dispatch = useDispatch();
 
@@ -20,9 +24,21 @@ const CommentForm = ({ dineId }) => {
   };
 
   console.log(comment);
-  dispatch(addComment(comment));
+  dispatch(postComment(comment));
   setModalOpen(false);
  };
+
+ if (isLoading) {
+  return (
+   <Loading />
+  );
+ }
+ if (errMsg) {
+  return (
+   <Error errMsg={errMsg} />
+  );
+ }
+
  return (
   <>
    <Button outline onClick={() => setModalOpen(true)}>
@@ -30,6 +46,7 @@ const CommentForm = ({ dineId }) => {
    </Button>
    <Modal isOpen={modalOpen}>
     <ModalHeader toggle={() => setModalOpen(false)}>Add Comment</ModalHeader>
+
     <ModalBody>
      <Formik
       initialValues={{
