@@ -7,6 +7,10 @@ npm install
 
 npm start
 
+For data:
+Clone and run json server for this project with local data storage from here 
+https://github.com/ashley-christensen/dinera-jsonServer
+
 Languages/Libraries/Tools:
 --React, ReactStrap, React Router, Formik, React Spring, Node, and Redux/Redux Toolkit for State Management
 
