@@ -9,12 +9,13 @@ npm start
 
 For data:
 Clone and run json server for this project with local data storage from here
+https://github.com/ashley-christensen/dinera-jsonServer
 
 (install json-server)
 
 json-server --watch db.json
 
-https://github.com/ashley-christensen/dinera-jsonServer
+
 
 
 Backend server connected to Mongo Atlas:
