@@ -20,6 +20,7 @@ json-server --watch db.json
 
 Backend server connected to Mongo Atlas:
 https://github.com/ashley-christensen/express-dineraServer
+Use for endpoints for Dinera
 
 Languages/Libraries/Tools:
 --React, ReactStrap, React Router, Formik, React Spring, Node, and Redux/Redux Toolkit for State Management
